@@ -19,11 +19,11 @@
 <body>
 
   <div>
-    <p class="highlight">Lorem ipsum dolor sit amet.</p>
-    <p class="normal">Lorem ipsum dolor sit amet.</p>
-    <p class="normal">Lorem ipsum dolor sit amet.</p>
-    <p class="normal">Lorem ipsum dolor sit amet.</p>
-    <p class="normal">Lorem ipsum dolor sit amet.</p>
+    <p class="highlight"> my name is tushar with yellow color.</p>
+    <p class="normal">my name is tushar with blue color.</p>
+    <p class="normal">my name is tushar with blue color.</p>
+    <p class="normal">my name is tushar with blue color</p>
+    <p class="normal">my name is tushar with blue color</p>
   </div>
 
 </body>
