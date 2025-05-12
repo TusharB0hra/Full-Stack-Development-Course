@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html {
+            font-size: 16px;
+            /* 1rem = 16px */
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            /* 80% of the body width */
+            padding: 2em;
+            /* 2 × body font-size = 32px */
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            width: 300px;
+            /* Fixed width */
+            height: 45vh;
+            /* 20% of viewport height */
+            background-color: #88ccff;
+            font-size: 1.5rem;
+            /* 1.5 × root font-size = 24px */
+            margin-top: 2em;
+        }
+
+        .text {
+            padding: 1em;
+            /* 1 × .box font-size = 24px */
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Container (80% width, 2em padding)</h2>
+        <div class="box">
+            I'm a box (300px wide, 20vh tall, 1.5rem font)
+            <div class="text">
+                Inner text with 1em padding (24px)
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
