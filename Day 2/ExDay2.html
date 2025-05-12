@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Student Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #loginForm {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        #studentTable {
+            display: none;
+            margin-top: 20px;
+            width: 90%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            text-align: center;
+            color: navy;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="loginForm">
+        <h2>Enter Password to View Student Table</h2>
+        <input type="password" id="passwordInput" placeholder="Enter password">
+        <button onclick="checkPassword()">Login</button>
+        <p id="errorMsg" style="color:red;"></p>
+    </div>
+
+    <div id="tableContainer">
+        <h2>Big Student Information Table</h2>
+        <table id="studentTable">
+            <tr>
+                <th rowspan="2">Roll No</th>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">Age</th>
+                <th colspan="2">Details</th>
+            </tr>
+            <tr>
+                <th>Class</th>
+                <th>Marks</th>
+            </tr>
+            <tr><td>101</td><td>Rahul</td><td>15</td><td>10th</td><td>89</td></tr>
+            <tr><td>102</td><td>Jay</td><td>14</td><td>9th</td><td>78</td></tr>
+            <tr><td>103</td><td>Rajesh</td><td>15</td><td>10th</td><td>82</td></tr>
+            <tr><td>104</td><td>Aditya</td><td>13</td><td>8th</td><td>90</td></tr>
+            <tr><td>105</td><td>Sandeep</td><td>14</td><td>9th</td><td>85</td></tr>
+            <tr><td>106</td><td>Amit</td><td>15</td><td>10th</td><td>91</td></tr>
+            <tr><td>107</td><td>Anand</td><td>13</td><td>8th</td><td>76</td></tr>
+            <tr><td>108</td><td>Kamal</td><td>15</td><td>10th</td><td>88</td></tr>
+            <tr><td>109</td><td>Arjun</td><td>14</td><td>9th</td><td>84</td></tr>
+            <tr><td>110</td><td>Suresh</td><td>13</td><td>8th</td><td>79</td></tr>
+            <tr><td>111</td><td>Ramesh</td><td>14</td><td>9th</td><td>73</td></tr>
+            <tr><td>112</td><td>Vikram</td><td>15</td><td>10th</td><td>87</td></tr>
+            <tr><td>113</td><td>Neeraj</td><td>13</td><td>8th</td><td>69</td></tr>
+            <tr><td>114</td><td>Karan</td><td>15</td><td>10th</td><td>92</td></tr>
+            <tr><td>115</td><td>Deepak</td><td>14</td><td>9th</td><td>81</td></tr>
+            <tr><td>116</td><td>Sachin</td><td>13</td><td>8th</td><td>75</td></tr>
+            <tr><td>117</td><td>Aryan</td><td>14</td><td>9th</td><td>83</td></tr>
+            <tr><td>118</td><td>Manish</td><td>15</td><td>10th</td><td>94</td></tr>
+            <tr><td>119</td><td>Nikhil</td><td>13</td><td>8th</td><td>77</td></tr>
+            <tr><td>120</td><td>Vivek</td><td>14</td><td>9th</td><td>86</td></tr>
+        </table>
+    </div>
+
+    <script>
+        function checkPassword() {
+            var input = document.getElementById("passwordInput").value;
+            var table = document.getElementById("studentTable");
+            var form = document.getElementById("loginForm");
+            var errorMsg = document.getElementById("errorMsg");
+
+            if (input === "falcons") {
+                form.style.display = "none";
+                table.style.display = "table";
+            } else {
+                errorMsg.textContent = "Incorrect password. Try again.";
+            }
+        }
+    </script>
+
+</body>
+</html>
