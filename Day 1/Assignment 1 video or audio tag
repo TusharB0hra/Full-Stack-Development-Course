@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Showcase</title>
+</head>
+<body>
+  <h1>Audio Files</h1>
+  <div>
+    <audio controls src="./sounds/1.mp3"></audio><br><br>
+    <audio controls src="./sounds/2.mp3"></audio><br><br>
+    <audio controls src="./sounds/3.mp3"></audio><br><br>
+    <audio controls src="./sounds/4.mp3"></audio><br><br>
+    <audio controls src="./sounds/5.mp3"></audio><br><br>
+    <audio controls src="./sounds/6.mp3"></audio><br><br>
+  </div>
+
+  <h1>Video Files</h1>
+  <div>
+    <video width="320" height="240" controls src="./videos/1SampleVideo_1280x720_1mb.mp4"></video><br><br>
+    <video width="320" height="240" controls src="./videos/6SampleVideo_1280x720_2mb.mp4"></video><br><br>
+    <video width="320" height="240" controls src="./videos/3SampleVideo_720x480_1mb.mp4"></video><br><br>
+    <video width="320" height="240" controls src="./videos/4SampleVideo_720x480_2mb.mp4"></video><br><br>
+    <video width="320" height="240" controls src="./videos/5SampleVideo_720x480_5mb.mp4"></video><br><br>
+    <video width="320" height="240" controls src="./videos/6SampleVideo_1280x720_2mb.mp4"></video><br><br>
+  </div>
+</body>
+</html>
