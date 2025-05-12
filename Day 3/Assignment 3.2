@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor Website</title>
+    <style>
+        :root {
+            --bg-color: blueviolet;
+            --text-color: rgb(232, 227, 232);
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            background-color: var(--bg-color);
+            padding: 12px 0;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            font-weight: bolder;
+            color: var(--text-color);
+            padding: 50px;
+        }
+
+        .theme-button {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav> 
+            <ul> 
+                <li> Home</li>
+                <li> About</li>
+                <li> Services</li>
+                <li> Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div style="text-align: center;">
+        <button class="theme-button" onclick="changeTheme('blueviolet', 'rgb(232, 227, 232)')">Default Theme</button>
+        <button class="theme-button" onclick="changeTheme('darkgreen', 'white')">Green Theme</button>
+        <button class="theme-button" onclick="changeTheme('darkred', 'yellow')">Red Theme</button>
+    </div>
+
+    <script>
+        function changeTheme(bgColor, textColor) {
+            document.documentElement.style.setProperty('--bg-color', bgColor);
+            document.documentElement.style.setProperty('--text-color', textColor);
+        }
+    </script>
+</body>
+</html>
