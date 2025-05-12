@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid blue;
+            /*  display: inline; first we take inline property */
+            display: inline-block;
+            /* to set width of the box */
+            /* visibility: hidden; */
+            padding: 45px;
+            margin: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <diV class="box"> also a nice box </diV>
+
+    <span> I am a good </span>
+    <span> Girl</span>
+
+    <div class=" container">
+        hello i am flex blox
+    </div>
+</body>
+
+</html>
